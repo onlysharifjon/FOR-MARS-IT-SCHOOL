@@ -28,5 +28,20 @@ Keling, avvaliga xizmat ko’rsatish tilini tanlab olaylik.
     ''', reply_markup=til)
 
 
+@dp.message_handler(text='O`zbekcha')
+async def uz(message: types.Message):
+    await message.answer('''O`zbek tilini tanladingiz!''')
+
+
+@dp.message_handler(text='Ruscha')
+async def ru(message: types.Message):
+    await message.answer('''Вы выбрали русский язык!''')
+
+
+@dp.message_handler(text='Inglizcha')
+async def en(message: types.Message):
+    await message.answer('''You have chosen English!''')
+
+
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)

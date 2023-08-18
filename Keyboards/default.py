@@ -4,9 +4,15 @@ til = ReplyKeyboardMarkup(
     keyboard=[
         [
             KeyboardButton('O`zbekcha'),
+
+        ],
+        [
             KeyboardButton('Ruscha'),
+        ],
+        [
             KeyboardButton('Inglizcha')
-        ]
+        ],
+
     ],
     resize_keyboard=True
 )
